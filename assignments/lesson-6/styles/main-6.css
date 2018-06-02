@@ -1,0 +1,108 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */ 
+{ box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;  /* Declare the base font-family */
+  background-size: contain;
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 1000px;
+}
+
+header {
+    text-align: center;
+    background-color: #060049;
+    color: #ccd0d4;
+    font-weight: bold;
+}
+header h1 {
+    font-family: 'Sarpanch', sans-serif;
+}
+header img {
+    float:left;
+
+}
+header .subheading {}
+
+nav {
+    text-align: center;
+}
+nav button {}
+nav ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    border-right: 1px solid #bbb;
+    display: block;
+}
+nav ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #05007c;
+    color: #ccd0d4;
+}
+nav ul li:last-child{
+    border-right: none;
+}
+nav ul li.active a {
+    background-color: #060049;
+    color: #ccd0d4;
+}
+nav ul li a:hover:not(.active){
+    background-color: #060049;
+    color: #ccd0d4;
+}
+
+main {
+   display:block;
+   background-color: #ccd0d4;
+   color: #060049;
+    text-align: center;
+}
+main img {
+    width: 75%;
+}
+main h2 {
+    font-family: 'Sarpanch', sans-serif;
+}
+main h3 {
+    font-family: 'Sarpanch', sans-serif;
+}
+main figure {
+}
+main section div picture img { 
+    Width: 40%;
+    Height: auto;
+}
+main article {
+    text-align: center;
+}
+main article img {
+    width: 80%;
+    height: auto;
+}
+footer {
+    display: block;
+    text-align: center;
+    background-color: #060049;
+    color: #ccd0d4;    
+}
+
+.forecast {
+    display: none;
+}
+.footer-bar {background-color: #000633;}
+
+.subheading {
+    font-family: 'Ravi Prakash', cursive;
+}
