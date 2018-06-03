@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main-6.css">
     <link rel="stylesheet" href="styles/medium-6.css">
-    <link rel="stylesheet" href="styles/main-6.css">
+    <link rel="stylesheet" href="styles/large-6.css">
 </head>
 <body>
   <header>
@@ -21,10 +21,10 @@
   </header>
 
   <nav>
-      
-    <ul>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primarynav" class="hide">
     	<li><a href="#">Home</a></li>
-    	<li><a href="#">Franklin</a></li>
+    	<li class="currentpage"><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
         <li><a href="#">Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
@@ -33,7 +33,10 @@
   </nav>
     
   <main>
-    <img src="images/sunrise-opt.jpg" width="200" alt="Franklin sky on a sunny day">
+    <picture>
+      <img src="images/franklin-large.jpg" alt="Sunny day over the mountain range in Fraklin"
+      srcset="images/franklin-small.jpg 599w, images/franklin-medium.jpg 1023w, images/franklin-large.jpg 1500w">
+    </picture>
     <h2>Franklin City</h2>
     <figure>
     </figure>
@@ -101,14 +104,15 @@
     
   <footer>
     <section class="contact">
-      Contact information placeholder
-      999.999.9999
-      123 Main St. Anytown, US 99999
-      Google Map
+        <p>Contact information placeholder</p>
+        <p>999.999.9999</p>
+        <p>123 Main St. Anytown, US 99999</p>
+        <p>Google Map</p>
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Precise Skies | <span id="currentdate">Current Date Placeholder</span>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Precise Skies | <span id="currentdate"></span>
     </section>
   </footer>
-
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 </html>
