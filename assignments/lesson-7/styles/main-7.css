@@ -48,7 +48,6 @@ nav ul.hide {
     display: none;
 }
 nav ul {
-    
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -133,6 +132,6 @@ main ul li img {
         width: 90%;
         height: auto;
     }
-/*.topheader.subheading {
-    flex-direction: column;
-}*/
+#gallery-images {
+    padding: 0;
+    }
