@@ -121,10 +121,8 @@ footer section span .currentdate {
 }
 
 .grid {
-    text-decoration: none;
+    list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
 }
 /*.topheader.subheading {
     flex-direction: column;
