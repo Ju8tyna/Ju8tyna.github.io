@@ -7,7 +7,6 @@
     }
     .grid {
         display: grid;
-        grid-row-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
     }
     main ul li:hover {box-shadow: 5px 5px 10px gray;}
