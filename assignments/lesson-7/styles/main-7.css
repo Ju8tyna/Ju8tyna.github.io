@@ -33,7 +33,8 @@ header img {
     padding: .5rem;
 }
 nav {
-    text-align: right;
+    text-align: center;
+    padding: .2rem;
     background-color: #05007c;
 }
 nav button {
@@ -53,18 +54,22 @@ nav ul {
     padding: 0;
     overflow: hidden;
 }
-nav ul li a {
-    padding: .8rem 2%;
+nav ul li {
+    padding: .5em;
+}
+nav ul li a { 
     color: #ccd0d4;
     text-decoration: none;
 }
 nav ul li.currentpage a {
+    padding: .5em;
     background-color: #ccd0d4;
     color: #060049;
 }
 nav ul li a:hover:not(.active){
     background-color: #060049;
     color: #ccd0d4;
+    padding: .5em;
 }
 
 main {
