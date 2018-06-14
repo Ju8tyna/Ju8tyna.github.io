@@ -41,7 +41,7 @@
           <fieldset>
               <legend>Your Information:</legend>
               Full name: <br>
-              <input type="text" name="firstname" pattern="[A-Za-z].{5,}" title="Must be at least 5 characters long, uppercase and lowercase letters only. No symbols, special characters, or numbers" required><br>
+              <input type="text" name="fullname" pattern="[A-Za-z].{5,}" title="Must be at least 5 characters long, uppercase and lowercase letters only. No symbols, special characters, or numbers" required><br>
               Phone number:<br>
               <input type="tel" name="usertel" required><br>
               Email:<br>
@@ -54,7 +54,7 @@
               Storm Date: <br>
               <input type="date" name="date"><br>
               Storm type: <br>
-              <input list="storms">
+              <input name="stormlist" list="storms">
               <datalist id="storms">
                   <option value="Flash Flood">
                   <option value="Hail">
@@ -63,13 +63,13 @@
                   <option value="Tornado">
               </datalist><br>
               Storm Severity:<br>             
-              <input type="range" min="0" max="50"><br>
+              <input type="range" name="sevrange" min="0" max="50"><br>
               Are you in danger?<br>
               <input type="radio" name="danger" value="yes">Yes<br>
               <input type="radio" name="danger" value="maybe">Maybe<br>
               <input type="radio" name="danger" value="no">No<br>
           </fieldset>
-          <input type="submit" value="Post" onclick="location.href='thanks.html'">
+          <input type="submit" value="Post" formaction="/thanks.html">
       </form>
       
 <!--full name using input of type text and is required and only accept alpha characters with a minimum of five characters using a regular expression pattern.
