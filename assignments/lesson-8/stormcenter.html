@@ -51,7 +51,7 @@
           </fieldset>
           <fieldset>
               <legend>Storm Details:</legend>
-              Storm Date: <br>
+              Storm date: <br>
               <input type="date" name="date"><br>
               Storm type: <br>
               <input name="stormlist" list="storms">
@@ -62,13 +62,14 @@
                   <option value="Thunderstorm">
                   <option value="Tornado">
               </datalist><br>
-              Storm Severity:<br>             
+              Storm severity:<br>             
               <input type="range" name="sevrange" min="0" max="50"><br>
               Are you in danger?<br>
               <input type="radio" name="danger" value="yes">Yes<br>
               <input type="radio" name="danger" value="maybe">Maybe<br>
               <input type="radio" name="danger" value="no">No<br>
           </fieldset>
+          <textarea name="strmcntrcomments">Additional Comments:</textarea>
           <input type="submit" value="Post" formaction="/thanks.html">
       </form>
       
