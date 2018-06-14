@@ -1,0 +1,13 @@
+@media only screen and (min-width: 64em) {
+    main picture img {
+        float:none;
+    }
+    .forecast {
+        margin-top: auto
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main ul li:hover {box-shadow: 5px 5px 10px gray;}
+  }

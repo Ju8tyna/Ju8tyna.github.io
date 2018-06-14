@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Precise Skies - Local Weather Photo Gallery</title>
+    <meta name="description" content="Precise Skies web page for local weather related images gallery">
+    <link href="https://fonts.googleapis.com/css?family=Sarpanch:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css">
+    <link rel="stylesheet" href="styles/large-8.css">
+</head>
+<body>
+  <header class="topheader">
+      <img src="images/108px-weather-rain-thunderstorm.svg.png" width="90">
+      <div class="subheading">
+          <h1>Precise Skies</h1>
+          <p>Your Forecast - One Thing You Can Count On</p>
+      </div>
+
+  </header>
+
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primarynav" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li ><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+        <li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="currentpage"><a href="gallery-7.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <ul id="gallery-images" class="grid">
+        <li id="griditem">
+            <img src="images/gallery-opt-adventure-aerial.jpg" alt="Ariel view of snowfall">
+            <p>Ariel view of snowfall</p>
+        </li>
+        <li id="griditem">
+            <img src="images/gallery-opt-agriculture-clouds.jpg" alt="Photo of a rainbow over a ranch">
+            <p>Rainbow over the ranch</p>
+        </li>
+        <li id="griditem">
+            <img src="images/gallery-opt-blue-sky.jpg" alt="Photo of the blue sky and green grass on a partially cloudy day">
+            <p>Blue, blue sky</p>
+        </li>
+        <li id="griditem">
+            <img src="images/gallery-opt-dark-clouds.jpg" alt="Sunset breaking through dark clouds on a stormy day">
+            <p>Sunset breaking through the storm</p>
+        </li>
+        <li id="griditem">
+            <img src="images/gallery-opt-rain.jpg" alt="Rain drops falling on asphalt">
+            <p>Rainy day</p>
+        </li>
+        <li id="griditem">
+            <img src="images/gallery-opt-sunrise.jpg" alt="Sunrise over a field">
+            <p>Sunrise over the field</p>
+        </li>
+    </ul> 
+      
+  </main>
+    
+  <footer>
+    <section class="contact">
+        <p>Contact information placeholder</p>
+        <p>999.999.9999</p>
+        <p>123 Main St. Anytown, US 99999</p>
+        <p>Google Map</p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Precise Skies | <span id="currentdate"></span>
+    </section>
+  </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
