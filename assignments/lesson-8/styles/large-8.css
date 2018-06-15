@@ -9,5 +9,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    main ul li:hover {box-shadow: 5px 5px 10px gray;}
+    main ul li:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+    main fieldset ul li:hover {
+        box-shadow: none;
+    }
   }

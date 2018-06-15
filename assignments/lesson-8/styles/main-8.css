@@ -124,6 +124,8 @@ footer section span .currentdate {
     display: flex;
 }
 
+/*Gallery*/
+
 .grid {
     list-style-type: none;
     display: grid;
@@ -137,9 +139,13 @@ main ul li img {
 #gallery-images {
     padding: 0;
     }
+
+/*Storm Center*/
+
 .stormform{
     padding: 10px 10px 60px 10px;
     text-align: left;
+    direction: grid;
 }
 .scomments {
     width:auto;
@@ -153,5 +159,9 @@ main ul li img {
     grid-template-columns: .5fr 1fr;
     grid-row-gap: 15px;
     padding: 0;
-    
+}
+#stormcenterbutton {
+    padding: 5px;
+    width: 4em;
+    height: 2em;
 }

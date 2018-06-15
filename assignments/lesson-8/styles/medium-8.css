@@ -55,6 +55,9 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     }
+    
+/*Storm Center*/
+    
     .stormform {
         display: grid;
         grid-template-columns: 1fr 1fr;
