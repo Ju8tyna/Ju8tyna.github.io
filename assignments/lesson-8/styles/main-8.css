@@ -137,3 +137,21 @@ main ul li img {
 #gallery-images {
     padding: 0;
     }
+.stormform{
+    padding: 10px 10px 60px 10px;
+    text-align: left;
+}
+.scomments {
+    width:auto;
+    height: 10em;
+    padding: 5px;
+    margin: 2px;
+}
+.formsection {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-row-gap: 15px;
+    padding: 0;
+    
+}

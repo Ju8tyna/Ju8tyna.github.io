@@ -37,39 +37,43 @@
   <main> 
       <h2>Storm Center</h2>
       <h3>Report Weather Conditions</h3>
-      <form method="post">
+      <form class="stormform" method="post">
           <fieldset>
               <legend>Your Information:</legend>
-              Full name: <br>
-              <input type="text" name="fullname" pattern="[A-Za-z].{5,}" title="Must be at least 5 characters long. May contain uppercase and lowercase letters only. No symbols, special characters, or numbers" required><br>
-              Phone number:<br>
-              <input type="tel" name="usertel" required><br>
-              Email:<br>
-              <input type="email" name="useremail" placeholder="someone@email.com"><br>
-              Zip code:<br>
-              <input type="number" name="userzip" required><br>
+              <ul class="formsection">
+                  <li>Full name: </li>
+                  <li><input type="text" name="fullname" pattern="[A-Za-z].{5,}" title="Must be at least 5 characters long. May contain uppercase and lowercase letters only. No symbols, special characters, or numbers" required></li>
+                  <li>Phone number:</li>
+                  <li><input type="tel" name="usertel" required></li>
+                  <li>Email:</li>
+                  <li><input type="email" name="useremail" placeholder="someone@email.com"></li>
+                  <li>Zip code:</li>
+                  <li><input type="number" name="userzip" required><br></li>
+              </ul>
           </fieldset>
           <fieldset>
               <legend>Storm Details:</legend>
-              Storm date: <br>
-              <input type="date" name="date"><br>
-              Storm type: <br>
-              <input name="stormlist" list="storms">
-              <datalist id="storms">
-                  <option value="Flash Flood">
-                  <option value="Hail">
-                  <option value="Hurricane">
-                  <option value="Thunderstorm">
-                  <option value="Tornado">
-              </datalist><br>
-              Storm severity:<br>             
-              <input type="range" name="sevrange" min="0" max="50"><br>
-              Are you in danger?<br>
-              <input type="radio" name="danger" value="yes">Yes<br>
-              <input type="radio" name="danger" value="maybe">Maybe<br>
-              <input type="radio" name="danger" value="no">No<br>
+              <ul class="formsection">
+                  <li>Storm date: </li>
+                  <li><input type="date" name="date"></li>
+                  <li>Storm type: </li>
+                  <li><input name="stormlist" list="storms">
+                  <datalist id="storms">
+                      <option value="Flash Flood">
+                      <option value="Hail">
+                      <option value="Hurricane">
+                      <option value="Thunderstorm">
+                      <option value="Tornado">
+                      </datalist></li>
+                  <li>Storm severity (1-10):</li>         
+                  <li><input type="range" id="severity" name="severityrange" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span id="severityvalue">5</span></li>
+                  <li>Are you in danger?</li>
+                  <li><input type="radio" name="danger" value="yes">Yes<br>
+                  <input type="radio" name="danger" value="maybe">Maybe<br>
+                      <input type="radio" name="danger" value="no">No</li>
+              </ul>
           </fieldset>
-          <textarea name="strmcntrcomments">Additional Comments:</textarea>
+          <textarea class= "scomments" name="strmcntrcomments">Additional Comments:</textarea>
           <input type="submit" value="Post" formaction="/thanks.html">
       </form>
       
