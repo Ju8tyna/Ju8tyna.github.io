@@ -14,7 +14,7 @@
 </head>
 <body>
   <header class="topheader">
-      <img src="images/108px-weather-rain-thunderstorm.svg.png" width="90">
+      <img src="images/108px-weather-rain-thunderstorm.svg.png" width="90" alt="thundercloud icon">
       <div class="subheading">
           <h1>Precise Skies</h1>
           <p>Your Forecast - One Thing You Can Count On</p>
@@ -37,7 +37,7 @@
   <main> 
       <h2>Storm Center</h2>
       <h3>Report Weather Conditions</h3>
-      <form class="stormform" method="post">
+      <form class="stormform" method="post" action="thanks.html">
           <fieldset>
               <legend>Your Information:</legend>
               <ul class="formsection">
@@ -65,9 +65,9 @@
                       <option value="Thunderstorm">
                       <option value="Tornado">
                       </datalist></li>
-                  <li>Storm severity 
-                      <br> (1-10):</li>         
-                  <li><input type="range" id="severity" value="5" name="severityrange" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span id="severityvalue">5</span></li>
+                  <li><label for="rating">Storm severity 
+                      <br> (1-10):</label></li>         
+                  <li><input type="range" id="severity" value="5" name="severity" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span id="severityvalue"></span></li>
                   <li>Storm region:</li>
                   <li>
                       <select name="region">
@@ -83,7 +83,7 @@
               </ul>
           </fieldset>
           <textarea class= "scomments" name="strmcntrcomments">Additional Comments:</textarea> <br>
-          <input type="submit" id="stormcenterbutton" value="Submit" formaction="/thanks.html">
+          <input type="submit" id="stormcenterbutton" value="Submit">
       </form>
       
 <!--full name using input of type text and is required and only accept alpha characters with a minimum of five characters using a regular expression pattern.
