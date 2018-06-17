@@ -58,8 +58,4 @@
     
 /*Storm Center*/
     
-    .stormform {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 }

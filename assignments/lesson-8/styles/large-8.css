@@ -1,6 +1,8 @@
 @media only screen and (min-width: 64em) {
     main picture img {
         float:none;
+        width: 100%;
+        height: auto;
     }
     .forecast {
         margin-top: auto
@@ -14,5 +16,9 @@
     }
     main fieldset ul li:hover {
         box-shadow: none;
+    }
+    .scomments {
+        width: 50%;
+        height: 10em;
     }
   }
