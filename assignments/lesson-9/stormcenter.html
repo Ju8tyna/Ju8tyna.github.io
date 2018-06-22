@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Precise Skies - Local Weather Storm Center Page</title>
+    <meta name="description" content="Precise Skies web page for local weather and storm conditions with input and alerts from users.">
+    <link href="https://fonts.googleapis.com/css?family=Sarpanch:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css">
+    <link rel="stylesheet" href="styles/large-8.css">
+</head>
+<body>
+  <header class="topheader">
+      <img src="images/108px-weather-rain-thunderstorm.svg.png" width="90" alt="thundercloud icon">
+      <div class="subheading">
+          <h1>Precise Skies</h1>
+          <p>Your Forecast - One Thing You Can Count On</p>
+      </div>
+
+  </header>
+
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primarynav" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li ><a href="franklin-8.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+        <li><a href="#">Springfield</a></li>
+    	<li class="currentpage"><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-8.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main> 
+      <h2>Storm Center</h2>
+      <h3>Report Weather Conditions</h3>
+      <form class="stormform" action="thanks.html">
+          <fieldset>
+              <legend>Your Information:</legend>
+              <ul class="formsection">
+                  <label>
+                    <li>
+                        *Full name: 
+                    </li>
+                    <li>
+                        <input type="text" name="fullname" placeholder="Your name" pattern="[A-Za-z].{5,}" title="Must be at least 5 characters long. May contain uppercase and lowercase letters only. No symbols, special characters, or numbers" required>
+                    </li>
+                  </label>
+                  <label>
+                    <li>
+                        *Phone number:
+                    </li>
+                      <li>
+                          <input type="tel" name="usertel" placeholder="000-000-0000" required>
+                      </li>
+                  </label>
+                  <label>
+                      <li>
+                          Email:
+                      </li>
+                      <li>
+                          <input type="email" name="useremail" placeholder="someone@email.com">
+                      </li>
+                  </label>
+                  <label>
+                      <li>
+                          *Zip code:
+                      </li>
+                      <li>
+                          <input type="number" name="userzip" placeholder="00000" required><br>
+                      </li>
+                  </label>
+              </ul>
+          </fieldset>
+          <fieldset>
+              <legend>Storm Details:</legend>
+              <ul class="formsection">
+                  <label>
+                      <li>
+                          Storm date: 
+                      </li>
+                      <li>
+                          <input type="date" name="date">
+                      </li>
+                  </label>
+                  <label>
+                      <li>
+                          Storm type: 
+                      </li>
+                      <li>
+                          <input name="stormlist" list="storms">
+                          <datalist id="storms">
+                          <option value="Flash Flood">
+                          <option value="Hail">
+                          <option value="Hurricane">
+                          <option value="Thunderstorm">
+                          <option value="Tornado">
+                          </datalist>
+                      </li>
+                  </label>
+                  <label>
+                      <li>
+                          Storm severity 
+                          <br> (1-10):
+                      </li>         
+                      <li>
+                          <input type="range" id="severity" value="5" name="severity" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span id="severityvalue">5</span>
+                      </li>
+                  </label>
+                  <label>
+                      <li>Storm region:</li>
+                      <li>
+                          <select name="region">
+                            <option>Select region</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                          </select>
+                      </li>
+                  </label>
+                  <label>
+                      <li>Are you in danger?</li>
+                      <li>
+                          <label><input type="radio" name="danger" value="yes">Yes</label><br>
+                          <label><input type="radio" name="danger" value="maybe">Maybe</label><br>
+                          <label><input type="radio" name="danger" value="no">No</label>
+                      </li>
+                  </label>
+              </ul>
+          </fieldset>
+          <textarea class= "scomments" name="strmcntrcomments">Additional Comments:</textarea> <br>
+          <input type="submit" id="stormcenterbutton" value="Post Storm Report">
+      </form>
+      
+<!--full name using input of type text and is required and only accept alpha characters with a minimum of five characters using a regular expression pattern.
+email using input of type email and use a placeholder to provide a demo email-->
+<!--phone number using input of type tel and is required
+zip code using input of type number and is required
+storm date using input of type date-->       
+      
+<!--storm severity using type range (1 to 10) with a corresponding label that indicates the current range value from 1 to 10. Hint: See the Pen HTML Form Example Objects-->
+      
+      
+<!--storm region using select with dropdown options of "Franklin", Greenville, and "Springfield". Add a first option with the text "Select Region ..." that is shown by default but not selectable (disabled). The rest of the options should have relevant value attributes.-->
+      
+      
+<!--user in-danger level using input of type radio with options and values of of yes, maybe, and no.
+additional information or comments using a textarea 
+form submission button using input of type submit-->
+      
+      
+<!--Each field element should have an appropriate name attribute-->
+
+      
+<!--Ensure that the design meets standards such as eye tracking in a straight line and proper keyboard progression for accessibility.  See "Designing more Efficient Forms"-->
+
+      
+<!--Your form design SHOULD NOT be exactly like the tutorial given on building a form. Incorporate your own design ideas and patterns.-->
+
+      
+<!--Create a new page labeled thanks.html that expresses gratitude for filling out the form. This page should load when the user has successfully submitted the form. Hint: review the <form> attributes.-->
+
+      
+<!--The storm center and thank you pages need to meet all standard criteria of valid, standards-based, semantic markup and be responsive in all viewports.-->
+      
+      
+  </main>
+    
+  <footer>
+    <section class="contact">
+        <p>Contact information placeholder</p>
+        <p>999.999.9999</p>
+        <p>123 Main St. Anytown, US 99999</p>
+        <p>Google Map</p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Precise Skies | <span id="currentdate"></span>
+    </section>
+  </footer>
+    <script src="scripts/stormseverity.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>

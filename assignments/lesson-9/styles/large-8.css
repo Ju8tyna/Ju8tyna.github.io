@@ -1,0 +1,24 @@
+@media only screen and (min-width: 64em) {
+    main picture img {
+        float:none;
+        width: 100%;
+        height: auto;
+    }
+    .forecast {
+        margin-top: auto
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main ul li:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+    main fieldset ul li:hover {
+        box-shadow: none;
+    }
+    .scomments {
+        width: 50%;
+        height: 10em;
+    }
+  }
