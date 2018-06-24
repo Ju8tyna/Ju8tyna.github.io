@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Precise Skies - Local Weather Photo Gallery</title>
+    <meta name="description" content="Precise Skies web page for local weather related images gallery">
+    <link href="https://fonts.googleapis.com/css?family=Sarpanch:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+</head>
+<body>
+  <header class="topheader">
+      <img src="images/108px-weather-rain-thunderstorm.svg.png" width="90">
+      <div class="subheading">
+          <h1>Precise Skies</h1>
+          <p>Your Forecast - One Thing You Can Count On</p>
+      </div>
+  </header>
+
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primarynav" class="hide">
+    	<li class="currentpage"><a href="home.html">Home</a></li>
+    	<li ><a href="franklin-9.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+        <li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+
+      <section class="main-weather-story">
+          <article>
+              <h2>Weather Story</h2>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in ante a nulla aliquam aliquet nec a neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam justo diam, ullamcorper sed accumsan ac, sagittis et felis. Aenean id semper ipsum. Vestibulum lobortis eu arcu sit amet mollis. Nulla sit amet enim ligula. Nam vehicula, turpis at rhoncus molestie, massa nunc fringilla lorem, at imperdiet dolor neque at ligula. Integer eget aliquet massa. Etiam egestas ipsum vitae enim condimentum aliquam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          </article>
+          <img src="images/gallery-opt-dark-clouds.jpg" alt="thunderstorm">
+      </section>
+      <div class="main-cities">
+          <section class="main-city">
+              <article>
+                <h2>Franklin</h2>
+                <p>Town stats <br>
+                   Current Temperature:<br>
+                   more information...</p>
+              </article>
+              <picture>
+                <img src="images/gallery-opt-agriculture-clouds.jpg" alt="Rainbow over a field in Franklin">
+              </picture>
+          </section>
+          <section class="main-city">
+              <article>
+                <h2>Greenville</h2>
+                <p>Town stats <br>
+                   Current Temperature:<br>
+                   more information...</p>
+              </article>
+              <picture>
+                <img src="images/gallery-opt-adventure-aerial.jpg" alt="Ariel view of Greenville">
+              </picture>
+          </section>
+          <section class="main-city">
+              <article>
+                <h2>Springfield</h2>
+                <p>Town stats <br>
+                   Current Temperature:<br>
+                   more information...</p>
+              </article>
+              <picture>
+                <img src="images/gallery-opt-blue-sky.jpg" alt="Blue skies in Springfield">
+              </picture>
+          </section>
+      </div>
+  </main>
+    
+  <footer>
+    <section class="contact">
+        <p>Contact information placeholder</p>
+        <p>999.999.9999</p>
+        <p>123 Main St. Anytown, US 99999</p>
+        <p>Google Map</p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Precise Skies | <span id="currentdate"></span>
+    </section>
+  </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>

@@ -21,4 +21,12 @@
         width: 50%;
         height: 10em;
     }
+    
+/* home page */
+    .main-weather-story {
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-cities {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
   }
