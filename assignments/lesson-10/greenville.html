@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Precise Skies - Local Weather for Franklin</title>
+    <meta name="description" content="Precise Skies web page for current local weather and forecasts for Franklin">
+    <link href="https://fonts.googleapis.com/css?family=Sarpanch:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-10.css">
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <link rel="stylesheet" href="styles/large-10.css">
+</head>
+<body>
+  <header class="topheader">
+      <img src="images/108px-weather-rain-thunderstorm.svg.png" width="90">
+      <div class="subheading">
+          <h1>Precise Skies</h1>
+          <p>Your Forecast - One Thing You Can Count On</p>
+      </div>
+
+  </header>
+
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primarynav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li class="currentpage"><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <picture>
+      <img src="images/franklin-large.jpg" alt="Sunny day over the mountain range in Fraklin"
+      srcset="images/franklin-small.jpg 599w, images/franklin-medium.jpg 1023w, images/franklin-large.jpg 1500w">
+    </picture>
+    <h2>Franklin City</h2>
+    <figure>
+    </figure>
+    <section class="weather-summary">
+      <h3>Weather Summary</h3>    
+      <div class="highlow">
+        <p>Currently: <span id="current-temp"></span>&deg;F</p>
+        <p>High: 90&deg;F</p>  
+        <p>Low: 66&deg;F</p>  
+      </div>
+      <div class="current">
+        <span id="weather-description"></span><img src="" id="weatherimage">
+      </div>   
+      <div class="conditions">
+        <p>Precipitation: 0&#37;</p>  
+        <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+        <p>Wind Chill: <span id="windchill"></span></p>
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+      
+    <article>
+        <h3>Franklin Breaks Record</h3>
+        <img src="images/boulders-franklin-opt.jpg" alt="franklin countryside sunset">
+         <p class="town-article">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in ante a nulla aliquam aliquet nec a neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam justo diam, ullamcorper sed accumsan ac, sagittis et felis. Aenean id semper ipsum. Vestibulum lobortis eu arcu sit amet mollis. Nulla sit amet enim ligula. Nam vehicula, turpis at rhoncus molestie, massa nunc fringilla lorem, at imperdiet dolor neque at ligula. Integer eget aliquet massa. Etiam egestas ipsum vitae enim condimentum aliquam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in ante a nulla aliquam aliquet nec a neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam justo diam, ullamcorper sed accumsan ac, sagittis et felis. Aenean id semper ipsum. Vestibulum lobortis eu arcu sit amet mollis. Nulla sit amet enim ligula. Nam vehicula, turpis at rhoncus molestie, massa nunc fringilla lorem, at imperdiet dolor neque at ligula. Integer eget aliquet massa. Etiam egestas ipsum vitae enim condimentum aliquam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in ante a nulla aliquam aliquet nec a neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam justo diam, ullamcorper sed accumsan ac, sagittis et felis. Aenean id semper ipsum. Vestibulum lobortis eu arcu sit amet mollis. Nulla sit amet enim ligula. Nam vehicula, turpis at rhoncus molestie, massa nunc fringilla lorem, at imperdiet dolor neque at ligula. Integer eget aliquet massa. Etiam egestas ipsum vitae enim condimentum aliquam.
+             
+        </p>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+        <p>Contact information placeholder</p>
+        <p>999.999.9999</p>
+        <p>123 Main St. Anytown, US 99999</p>
+        <p>Google Map</p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Precise Skies | <span id="currentdate"></span>
+    </section>
+  </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src='scripts/weather.js'></script>
+</body>
+</html>
