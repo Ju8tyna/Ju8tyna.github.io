@@ -38,9 +38,9 @@ request.onload = function () {
 function populateCities(jsonObj) {
     var mytowns = jsonObj["towns"];
 
-for (i = 0; i < towns.length; i++) {
+for (var i = 0; i < towns.length; i++) {
   // create elements as variables
-    var townStats = document.createElement('section');
+    var townStats = document.createElement('article');
     var townName = document.createElement("h2");
     var motto = document.createElement("p");
     var yrfounded = document.createElement("p");
@@ -52,9 +52,9 @@ for (i = 0; i < towns.length; i++) {
   //find info in json array
     townName.textContent = towns[i].name;
     motto.textContent = towns[i].motto;
-    yrfounded.textContent = "Year Founded:" + towns[i].yearFounded;
-    population.textContent = "Population:" + towns[i].currentPopulation;
-    yrRain.textContent = "Average Rainfall" + towns[i].averageRainfall;
+    yrfounded.textContent = "Year Founded: " + towns[i].yearFounded;
+    population.textContent = "Population: " + towns[i].currentPopulation;
+    yrRain.textContent = "Average Rainfall " + towns[i].averageRainfall;
   //append html body and section
     townStats.appendChild(townName);
     townStats.appendChild(motto);
