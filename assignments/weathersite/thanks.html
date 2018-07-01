@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Precise Skies - Local Weather Photo Gallery</title>
+    <meta name="description" content="Thank you page for Precise Skies, loads after Storm Center page is submitted.">
+    <link href="https://fonts.googleapis.com/css?family=Sarpanch:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+  <a href="index.html">
+  <header class="topheader">
+      <img src="images/108px-weather-rain-thunderstorm.svg.png" width="90">
+      <div class="subheading">
+          <h1>Precise Skies</h1>
+          <p>Your Forecast - One Thing You Can Count On</p>
+      </div>
+
+  </header>
+  </a>
+
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primarynav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li ><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.htmlS">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>Thank you!</h2>
+    <p>Thank you for your weather report. It will be reviewed and posted to our site shortly.</p>
+      
+  </main>
+    
+  <footer>
+    <section class="contact">
+        <p>Contact information placeholder</p>
+        <p>999.999.9999</p>
+        <p>123 Main St. Anytown, US 99999</p>
+        <p>Google Map</p>
+        <p>Weather data provided thanks to openweathermap.org  | Typefaces provided by fonts.google.com</p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Precise Skies | <span id="currentdate"></span>
+    </section>
+  </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>

@@ -21,4 +21,8 @@ weatherRequest.onload = function() {
     document.getElementById("weather-description").innerHTML = weatherData.weather[0].description;
     
     document.getElementById("wind-speed").innerHTML = weatherData.wind.speed;
+    
+    document.getElementById("high-temp").innerHTML = weatherData.main.temp_max;
+    
+    document.getElementById("low-temp").innerHTML = weatherData.main.temp_min;
 }

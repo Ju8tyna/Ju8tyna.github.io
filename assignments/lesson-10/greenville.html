@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/large-10.css">
 </head>
 <body>
+  <a href="index.html">
   <header class="topheader">
       <img src="images/108px-weather-rain-thunderstorm.svg.png" width="90">
       <div class="subheading">
@@ -21,6 +22,7 @@
       </div>
 
   </header>
+  </a>
 
   <nav>
     <button onclick="toggleMenu()">&#9776;</button>
@@ -46,8 +48,8 @@
       <h3>Weather Summary</h3>    
       <div class="highlow">
         <p>Currently: <span id="current-temp"></span>&deg;F</p>
-        <p>High: 90&deg;F</p>  
-        <p>Low: 66&deg;F</p>  
+        <p>High: <span id="high-temp"></span>&deg;F</p> 
+        <p>Low: <span id="low-temp"></span>&deg;F</p>   
       </div>
       <div class="current">
         <span id="weather-description"></span><img src="" id="weatherimage">
@@ -110,6 +112,7 @@
         <p>999.999.9999</p>
         <p>123 Main St. Anytown, US 99999</p>
         <p>Google Map</p>
+        <p>Weather data provided thanks to openweathermap.org  | Typefaces provided by fonts.google.com</p>
     </section>
     <section class="footer-bar">&copy;2018 | All Rights Reserved | Precise Skies | <span id="currentdate"></span>
     </section>

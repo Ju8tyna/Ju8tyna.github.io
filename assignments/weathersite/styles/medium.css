@@ -1,0 +1,61 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    header h1 {
+        font-size: 4em;
+    }
+    
+    nav{
+        text-align: center;
+    }
+    
+    nav button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
+    nav ul.hide {
+        display:flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li {
+        padding: .5em;
+    }
+    
+    nav ul li a {
+        padding: 0;
+    }
+    
+    section.forecast { 
+        display:block;
+        padding:.5em 2em 3em 2em;
+        background-color: #969ea4;
+    }  /* show the 10-day forecast with the medium view and up */
+    main picture img {
+        float:left;
+    }
+    main article img {
+        max-width: 50%;
+        height: auto;
+        float: right;
+        padding: .50em;
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse; 
+        padding: .2em;
+    }
+    table {
+        width: 100%;
+    }
+    .forecast {
+        margin-top: 6em; 
+    }
+    .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    }
+    
+/*Storm Center*/
+    
+}

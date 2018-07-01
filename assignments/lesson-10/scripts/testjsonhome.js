@@ -2,23 +2,41 @@ var cityimage=[
     
 ]
 
-for (i = 0; i < towns.length; i++) {
+let townInfoRequest = new XMLHttpRequest();
+let apiURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+townInfoRequest.open('GET', apiURL, true);
+townInfoRequest.send();
+
+townInfoRequest.onload = function() {
+      let townData = JSON.parse(townInfoRequest.responseText);
+      console.log(townData);
     
-    except for towns.length[2]; 
-    }
-
-
-    var townStats = document.createElement('section');
-    var townName = document.createElement("h2");
-    var motto = document.createElement("p");
-    var yrfounded = document.createElement("p");
-    var population = document.createElement("p");
-    var yrRain = document.createElement("p");
-
-    townName.textContent = towns[i].name;
-    motto.textContent = towns[i].motto;
-    yrFounded.textContent = towns[i].yearFounded;
-    population.textContent = towns[i].currentPopulation;
-    yrRain.textContent = towns[i].averageRainfall;
+    //Franklin
     
-}
+    document.getElementById("townName0").innerHTML = townData.towns[0].name;
+    
+    document.getElementById("townMotto").innerHTML = townData.towns[0].motto;
+    
+    document.getElementById("yrFounded").innerHTML = townData.towns[0].currentPopulation;
+    
+    document.getElementById("yrRain").innerHTML = townData.towns[0].averageRainfall;
+    
+    //Greenville
+    
+    document.getElementById("townName").innerHTML = townData.towns[1].name;
+    
+    document.getElementById("townMotto").innerHTML = townData.towns[1].motto;
+    
+    document.getElementById("yrFounded").innerHTML = townData.towns[1].currentPopulation;
+    
+    document.getElementById("yrRain").innerHTML = townData.towns[1].averageRainfall;
+    
+    //Springfield
+    
+    document.getElementById("townName").innerHTML = townData.towns[3].name;
+    
+    document.getElementById("townMotto").innerHTML = townData.towns[3].motto;
+    
+    document.getElementById("yrFounded").innerHTML = townData.towns[3].currentPopulation;
+    
+    document.getElementById("yrRain").innerHTML = townData.towns[3].averageRainfall;
