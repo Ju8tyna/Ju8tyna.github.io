@@ -38,7 +38,7 @@ request.onload = function () {
 function populateCities(jsonObj) {
     var mytowns = jsonObj["towns"];
 
-for (var i = 0; i < mytowns.length; i++) {
+for (var i = 0; i < towns.length; i++) {
   // create elements as variables
     var townStats = document.createElement('article');
     var townName = document.createElement("h2");
@@ -48,7 +48,7 @@ for (var i = 0; i < mytowns.length; i++) {
     var yrRain = document.createElement("p");
     
   //  except for towns.length[2]; 
-    }
+    
   //find info in json array
     townName.textContent = mytowns[i].name;
     motto.textContent = mytowns[i].motto;
@@ -63,5 +63,5 @@ for (var i = 0; i < mytowns.length; i++) {
     townStats.appendChild(yrRain);
     
     section.appendChild(townStats);
-    
+}
 }
