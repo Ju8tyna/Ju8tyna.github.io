@@ -1,0 +1,189 @@
+header, nav, main,footer { 
+    margin: auto;
+    max-width: 1000px;
+}
+
+h1 {
+    font-family: "Black Ops One";
+    color: #f69f37;
+    font-size: 3em;
+    padding: 0px 0px 0px;
+}
+
+h2, h3, h4 {
+    font-family: "Covered By Your Grace";
+    font-size: 2.5em;
+    color: #153243;
+}
+
+main p {
+    font-family: "Nanum Gothic"; 
+    font-size: 1.2em;
+    line-height: 1.3;
+    color: #153243;
+}
+
+body a {
+    text-decoration: none;
+}
+
+.myheader {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mytitle p {
+    color: #f69f37;
+    font-family: "Covered By Your Grace";
+    font-size: 2em;
+    line-height: .2em;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    padding: 10px 10px 0px;
+}
+
+/*nav button {
+    
+}*/
+
+nav {
+    text-align: center;
+    background-color: #28536b;
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    padding: 5px;
+}
+
+nav li {
+    float:left;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+.hiddenlist {
+    position: absolute;
+}
+
+nav ul li a {
+    color: #b4b8ab;
+    font-family: "Nanum Gothic"; 
+    font-size: 1.25em;
+}
+
+.hidedropdown {
+    position:relative;
+	clear:both;
+	/* Hide the Submenus */
+	display:none;
+}
+
+nav ul li.currentpage a {
+    padding: .5em;
+    background-color:#f69f37;
+    color: #28536b;
+}
+
+nav ul li a:hover:not(.active){
+    background-color: #153243;
+    color: #b4b8ab;
+    padding: .5em;
+}
+
+footer{
+    background-color: #28536b;
+    color: #b4b8ab;
+    padding: 5px 0px 0px;
+    font-family: "Nanum Gothic"; 
+    font-size: .75em;
+}
+
+footer p {
+    text-align: center;
+    line-height: 1em;
+}
+
+footer p a {
+    text-decoration: underline;
+    color: #f69f37;
+}
+
+.footer-bar {
+    text-align: center;
+    background-color: #153243;
+    color: #b4b8ab;
+    padding: 5px;
+}
+
+/*home page*/
+
+#carousel {
+    display: none;
+}
+
+.homesections {
+    Padding: 20px;
+    background-color: #b4b8ab;
+}
+
+.rndimg {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    border: none;
+    padding: 20px;
+    position: inherit;
+    align-self: center;
+    background-color: #b4b8ab;
+}
+
+.homesections article {
+    align-self: center;
+}
+
+button {
+    padding: 5px;
+    height: 60px;
+    width: 200px;
+    background-color: #f69f37;
+    text-align: center;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #153243;
+}
+
+article {
+    margin-left: 3em;
+}
+
+/*Bikes Page*/
+
+.bike {
+    border: 2pt solid #f69f37;
+    margin-top: 1.5em;
+}
+
+.price {
+    padding: 5px;
+    max-width: 110px;
+    list-style: none;
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+    color: #153243;
+    margin-top: .5em;
+}
+
+article ul {
+    font-family: "Nanum Gothic";
+    font-size: .9em;
+}

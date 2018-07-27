@@ -1,0 +1,15 @@
+@media only screen and (min-width: 64em) {
+    
+/* home page */
+#carousel {
+    display: block;
+    position: relative;
+    width: 1000px;
+    height: 400px;
+}
+    
+#carousel > div {
+    position: absolute;
+}
+    
+}

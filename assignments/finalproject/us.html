@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bangers|Black+Ops+One|Covered+By+Your+Grace|Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+  <a href="index.html">
+  <header class="myheader">
+      <img class="logo"  src="images/logonoback.jpg"alt="companylogo">
+      <div class="mytitle">
+          <h1>Mountain Spokes</h1>
+          <p>Mountain Biking</p>
+      </div>
+
+  </header>
+  </a>
+
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primarynav" class="hide" class="dropdownmenu">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="tours.html">Mountain Tours</a></li>
+            <ul>
+                <li class="hidedropdown"><a href="maps.html">Tour Maps</a></li>
+                <li class="hidedropdown"><a href="difficulty.html">Difficulty Levels</a></li>
+                <li class="hidedropdown"><a href="scheduling.html">Scheduling</a></li>
+            </ul>
+        <li><a href="parts.html">Bicycle Parts</a></li>
+    	<li><a href="maintenance.html">Bicycle Maintenance</a></li>
+            <ul>
+                <li class="hidedropdown"><a href="maintenance.html" onclick="repairPricingFocus()">Repairs and Maintenance Pricing</a></li>
+                <li class="hidedropdown"><a href="maintenance.html" onclick="repairQuoteFocus()">Special Repairs</a></li>
+            </ul>
+    	<li class="currentpage"><a href="us.html">Who Are We?</a></li>
+            <ul>
+                <li class="hidedropdown"><a href="us.html" onclick="ourStoryFocus()">Our Story</a></li>
+                <li class="hidedropdown"><a href="us.html" onclick="locationFocus()">Loctation and Hours</a></li>
+                <li class="hidedropdown"><a href="us.html" onclick="contactFocus()">Contact Information</a></li>
+            </ul>
+    </ul>		
+  </nav>
+    
+  <main>
+      <section class="homesections">
+          <img class="ownerpic" src="images/mountainbiker.jpg" alt="Mountain Spoke owner Mike rides his bike down a trail">
+          <article>
+              <h3>About the Owner</h3>
+              <p>Mike first started Mountain Spoke 10 years ago to help mountain bikers come together. With a deep love for mountain biking, he decided it was time to share it. He began by doing simple maintenance and repairs. Two years later, he received his first mountain bike inventory. After three more years of sales and repairs, Mike began sponsoring different adventure tours, including the yearly "Continental Divide". Today Mike is an active part of the business.</p>
+          </article>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931441035443!2d-111.09290618508234!3d45.67227662755711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1532674136744" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <article>
+              <h3>Contact Us</h3>
+              <p>
+              Phone: 999-999-9999<br>
+              Email: mountainspoke@someemail.com<br>
+              Address: 3950 Valley Commons Drive Bozeman, MT 
+              </p>
+          </article>
+      </section>
+  </main>
+    
+  <footer>
+    <section class="contact">
+        <p>Contact Us</p>
+        <p>999.999.9999</p>
+        <p>123 Main St. Anytown, US 99999</p>
+        <p>Google Map</p>
+        <p>Logo made with <a href="https://www.designevo.com/en/" title="Free Online Logo Maker">DesignEvo</a>  | Typefaces provided by <a href="https://fonts.google.com/" title="Free Fonts by Google">Google</a>  | <a href="resources.html">Other resources, click here</a> </p>  </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Mountain Spoke | <span id="currentdate"></span>
+    </section>
+  </footer>
+     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/focus.js"></script>
+    <script src="scripts/dropdownmenu.js"></script>
+</body>
+</html>

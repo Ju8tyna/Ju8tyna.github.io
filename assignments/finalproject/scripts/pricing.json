@@ -1,0 +1,34 @@
+[
+    {
+    "service": "Bike Inspection",
+    "price": "FREE"
+    },
+    {
+    "service": "Basic Tune Up",
+    "price": "$49"   
+    },
+    {
+    "service": "Advanced Tune Up",
+    "price": "$119"
+    },
+    {
+    "service": "Detailed Cleaning",
+    "price": "$99"   
+    },
+    {
+    "service": "Brake and Cable Change",
+    "price": "$7"
+    },
+    {
+    "service": "Adjustments (Brake/Deraileurs)",
+    "price": "$9 each"   
+    },
+    {
+    "service": "Suspension",
+    "price": "$29"
+    },
+    {
+    "service": "Tire/Tube Changes",
+    "price": "$4"   
+    }
+]

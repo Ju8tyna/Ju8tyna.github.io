@@ -1,0 +1,45 @@
+@media only screen and (min-width: 37.5em) {
+
+    .logo {
+        padding: 10px 10px 10px;
+    }
+    
+    header h1 {
+        font-size: 4em;
+        line-height: .1em;
+        padding: 20px 0px 0px;
+    }
+    
+    h2{
+        line-height: .2em;
+    }
+    
+    nav{
+        text-align: center;
+    }
+    
+    nav button { 
+        display: none; 
+    }
+    
+    nav ul.hide {
+        display:flex;
+        justify-content: space-around;
+    }
+    
+    footer p {
+    text-align: center;
+    line-height: .2em;
+    }
+    
+    /*home*/
+    
+    .homesections {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .rndimg {
+        width: 60%;
+    }
+}
