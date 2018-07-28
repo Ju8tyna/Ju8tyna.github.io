@@ -11,5 +11,11 @@
 #carousel > div {
     position: absolute;
 }
+
+/* events page */
+    
+h4 {
+    line-height: .2em;
+}
     
 }

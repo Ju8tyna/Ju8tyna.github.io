@@ -1,7 +1,6 @@
-<script type="text/javascript" src="scripts/pricing.json"></script>
 var table = document.querySelector('table');
-      var superHeroes = JSON.parse(pricing);
-      populateTable(superHeroes);
+      var priceList = JSON.parse(pricing);
+      populateTable(priceList);
     
     function populateTable(jsonObj) {
   var items = jsonObj[0];
@@ -18,13 +17,5 @@ var table = document.querySelector('table');
       
     myTR.appendChild(myTD1);
     myTR.appendChild(myTD2);
-
-    myArticle.appendChild(myH2);
-    myArticle.appendChild(myPara1);
-    myArticle.appendChild(myPara2);
-    myArticle.appendChild(myPara3);
-    myArticle.appendChild(myList);
-
-    section.appendChild(myArticle);
   }
 }

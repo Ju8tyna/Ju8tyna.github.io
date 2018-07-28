@@ -10,8 +10,8 @@ $(document).ready(function(){
         $(this).css("text-decoration", "underline");
     }, function() {
             $(this).css("text-decoration", "none");
-    }).click(function(e) {
-            e.preventDefault();
+    }).hover(function(){
+            event.preventDefault();
             $(".accordion").hide();
             $(this).next('.accordion').show();
     });

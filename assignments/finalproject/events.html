@@ -28,30 +28,15 @@
     <ul id="primarynav" class="hide" class="dropdownmenu">
     	<li><a href="index.html">Home</a></li>
     	<li><a href="tours.html">Adventure Tours</a></li>
-            <ul class="hiddenlist">
-                <li class="hidedropdown"><a href="maps.html">Tour Maps</a></li>
-                <li class="hidedropdown"><a href="difficulty.html">Difficulty Levels</a></li>
-                <li class="hidedropdown"><a href="scheduling.html">Scheduling</a></li>
-            </ul>
-        <li><a href="events.html">Events</a></li>
-        <li class="currentpage"><a href="bikes.html">Shop Bicycles</a></li>
+        <li class="currentpage"><a href="events.html">Events</a></li>
+        <li><a href="bikes.html">Shop Bicycles</a></li>
     	<li><a href="maintenance.html">Bicycle Maintenance</a></li>
-            <ul class="hiddenlist">
-                <li class="hidedropdown"><a href="maintenance.html" onclick="repairPricingFocus()">Repairs and Maintenance Pricing</a></li>
-                <li class="hidedropdown"><a href="maintenance.html" onclick="repairQuoteFocus()">Special Repairs</a></li>
-            </ul>
     	<li><a href="us.html">Who Are We?</a></li>
-            <ul class="hiddenlist">
-                <li class="hidedropdown"><a href="us.html" onclick="ourStoryFocus()">Our Story</a></li>
-                <li class="hidedropdown"><a href="us.html" onclick="locationFocus()">Loctation and Hours</a></li>
-                <li class="hidedropdown"><a href="us.html" onclick="contactFocus()">Contact Information</a></li>
-            </ul>
     </ul>		
   </nav>
     
   <main>
       <section class="homesections">
-          <img src="" alt="">
           <article>
                 <h3>Cycle the Continental Divide</h3>
                 <p>Join us for and adventure on one of the world's longest off-pavement biking trail!</p>
@@ -66,7 +51,7 @@
                 </ol>
               
                 <h4>Dates</h4>
-                    <li>This yearly event will take place June 3rd 2019 through June 23rd</li>
+              <p>This yearly event will take place June 3rd 2019 through June 23rd</p>
                 
                 <h4>Requirements</h4>
                     <p>This adventure is not for the light of heart! On this journey, 90% of the trail is either uphill or downhill. Minimum requirements include:</p>
@@ -80,9 +65,7 @@
                     </ul>
                 <h4>Cost</h4>
                     <p>$2,560.00</p>
-          </article>
-      </section>
-      <h3>Register Today!</h3>
+                    <h3>Register Today!</h3>
       <form class="regform" action="thanks.html">
           <fieldset>
               <legend>Your Information:</legend>
@@ -129,9 +112,12 @@
                   </label>
                 </ul>
           </fieldset>
-          <textarea class= "comments" name="commentsand accomodations">Special Accomodations/Comments:</textarea> <br>
+          <textarea class= "comments" name="commentsand accomadations">Special Accomadations/Comments:</textarea> <br>
           <input type="submit" id="regbutton" value="Register Now!">
       </form>
+          </article>
+      </section>
+
   </main>
     
   <footer>
@@ -147,7 +133,5 @@
      <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/focus.js"></script>
-    <script src="scripts/dropdownmenu.js"></script>
 </body>
 </html>

@@ -28,32 +28,18 @@
     <ul id="primarynav" class="hide" class="dropdownmenu">
     	<li><a href="index.html">Home</a></li>
     	<li><a href="tours.html">Mountain Tours</a></li>
-            <ul>
-                <li class="hidedropdown"><a href="maps.html">Tour Maps</a></li>
-                <li class="hidedropdown"><a href="difficulty.html">Difficulty Levels</a></li>
-                <li class="hidedropdown"><a href="scheduling.html">Scheduling</a></li>
-            </ul>
-        <li><a href="parts.html">Bicycle Parts</a></li>
+        <li><a href="bikes.html">Shop Bicycles</a></li>
     	<li><a href="maintenance.html">Bicycle Maintenance</a></li>
-            <ul>
-                <li class="hidedropdown"><a href="maintenance.html" onclick="repairPricingFocus()">Repairs and Maintenance Pricing</a></li>
-                <li class="hidedropdown"><a href="maintenance.html" onclick="repairQuoteFocus()">Special Repairs</a></li>
-            </ul>
     	<li class="currentpage"><a href="us.html">Who Are We?</a></li>
-            <ul>
-                <li class="hidedropdown"><a href="us.html" onclick="ourStoryFocus()">Our Story</a></li>
-                <li class="hidedropdown"><a href="us.html" onclick="locationFocus()">Loctation and Hours</a></li>
-                <li class="hidedropdown"><a href="us.html" onclick="contactFocus()">Contact Information</a></li>
-            </ul>
     </ul>		
   </nav>
     
   <main>
       <section class="homesections">
-          <img class="ownerpic" src="images/mountainbiker.jpg" alt="Mountain Spoke owner Mike rides his bike down a trail">
+          <img class="ownerpic" src="images/mountainbiker.jpg" alt="Mountain Spoke owner Mike rides his bike down a trail" class="sideimg">
           <article>
               <h3>About the Owner</h3>
-              <p>Mike first started Mountain Spoke 10 years ago to help mountain bikers come together. With a deep love for mountain biking, he decided it was time to share it. He began by doing simple maintenance and repairs. Two years later, he received his first mountain bike inventory. After three more years of sales and repairs, Mike began sponsoring different adventure tours, including the yearly "Continental Divide". Today Mike is an active part of the business.</p>
+              <p>Mike first started Mountain Spokes 10 years ago to help mountain bikers come together. With a deep love for mountain biking, he decided it was time to share it. He began by doing simple maintenance and repairs. Two years later, he received his first mountain bike inventory. After three more years of sales and repairs, Mike began sponsoring different adventure tours, including the yearly "Cycle the Continental Divide". Today Mike is an active part of the business.</p>
           </article>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931441035443!2d-111.09290618508234!3d45.67227662755711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1532674136744" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           <article>
@@ -64,6 +50,40 @@
               Address: 3950 Valley Commons Drive Bozeman, MT 
               </p>
           </article>
+          <form class="regform" action="thanks2.html">
+          <h3>Questions? Send us a message!</h3>
+          <fieldset>
+              <legend>Your Information:</legend>
+              <ul class="formsection">
+                  <label>
+                    <li>
+                        *Name: 
+                    </li>
+                    <li>
+                        <input type="text" name="name" placeholder="Your name" pattern="[A-Za-z]" title="May contain uppercase and lowercase letters only. No symbols, special characters, or numbers" required>
+                    </li>
+                  </label>
+                  <label>
+                    <li>
+                        Phone number:
+                    </li>
+                      <li>
+                          <input type="tel" name="usertel" placeholder="000-000-0000">
+                      </li>
+                  </label>
+                  <label>
+                      <li>
+                          *Email:
+                      </li>
+                      <li>
+                          <input type="email" name="useremail" placeholder="someone@email.com" required>
+                      </li>
+                  </label>
+                </ul>
+          </fieldset>
+          <textarea class= "comments" name="commentsand accomadations">Type here:</textarea> <br>
+          <input type="submit" id="regbutton" value="Send!">
+      </form>
       </section>
   </main>
     
@@ -80,7 +100,5 @@
      <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/focus.js"></script>
-    <script src="scripts/dropdownmenu.js"></script>
 </body>
 </html>
