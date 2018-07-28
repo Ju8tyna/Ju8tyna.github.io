@@ -46,9 +46,18 @@ body a {
     padding: 10px 10px 0px;
 }
 
-/*nav button {
-    
-}*/
+nav button {
+   padding: 5px;
+    height: 60px;
+    width: 200px;
+    background-color: #f69f37;
+    text-align: center;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #153243;
+    margin: 10px;
+}
 
 nav {
     text-align: center;
@@ -78,13 +87,7 @@ nav ul li a {
     color: #b4b8ab;
     font-family: "Nanum Gothic", sans-serif; 
     font-size: 1.25em;
-}
-
-.hidedropdown {
-    position:relative;
-	clear:both;
-	/* Hide the Submenus */
-	display:none;
+    line-height: 1.5em;
 }
 
 nav ul li.currentpage a {
@@ -97,6 +100,10 @@ nav ul li a:hover:not(.active){
     background-color: #153243;
     color: #b4b8ab;
     padding: .5em;
+}
+
+nav ul.hide {
+    display: none;
 }
 
 footer{
